@@ -53,8 +53,10 @@ hr
 main
   height 100%
 
-main.series
-  padding-bottom 2em
+section.series
+  padding 0 2em 2em 2em
+  hr
+    margin-bottom 1em
   h1
     color red
     margin-bottom 1em
@@ -63,26 +65,73 @@ main.series
     text-transform uppercase
   section.description
     display inline-block
-    max-width 20em
+    margin-right 1em
+    vertical-align top
+    width 20em
+    h2
+      color red
+      text-align center
+      text-transform uppercase
+    p
+      max-width 20em
+      text-align left
   section.main-show
     background-color content-color
     display inline-block
     margin 0 1em
+    width 35em
     figure
       height 30em
-      width 30em
+      margin 0
+      width 100%
   section.banner
-    background-color content-color
     display inline-block
-    height 30em
-    width 10em
-
-    article
+    figure
       background-color content-color
       display inline-block
-      height 100px
+      height 30em
+      margin 0
+      width 10em
+  h3
+    color red
+    padding-left 5em
+    text-align left
+    text-transform uppercase
+  section.videos
+    display flex
+    justify-content center
+    article
+      background-color content-color
+      display inline-flex
+      height 150px
       margin 0 0 1em 1em
-      width 100px
+      width 170px
+  section.gallery
+    display inline-block
+    width 36em
+    article
+      background-color content-color
+      height 150px
+      display inline-block
+      margin 0 0 1em 1em
+      width 170px
+  section.quotes
+    display inline-block
+    width 10em
+    figure
+      background-color content-color
+      height 20.125em
+      margin 4em 0.5em 0 0.5em
+  section.most-viewed
+    display inline-block
+    width 25em
+    article
+      background-color content-color
+      height 150px
+      display inline-block
+      margin 0 0 1em 1em
+      width 170px
+
 
 section#series
   background-color back-gray
@@ -255,6 +304,10 @@ footer
 .active
   color white
   background-color red
+
+.container
+  display flex
+  justify-content center
 
 .main, .small, .medium, .large
   background-color content-color
