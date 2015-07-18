@@ -1,0 +1,275 @@
+@import "nib"
+@import "normalize.styl"
+@import "fonts.styl"
+@import "responsiveslides.styl"
+@import "themes.styl"
+
+back-gray = #f2f2f2
+content-color = #5B5B5F
+footer-color = #333
+
+body
+  font-size 16px
+  font-family 'Corbel'
+
+header
+  background-color #FFF
+  padding-left 11%
+  position fixed
+  top 0
+  width 100%
+  z-index 500
+  figure
+    display inline-block
+    height 1.25em
+    width 8em
+    img
+      width 100%
+  nav
+    display inline-block
+    margin-left 15%
+    vertical-align top
+    ul
+    list-style none
+      li
+        display inline-block
+        a
+          color red
+          font-size 0.8em
+          font-weight bold
+          padding 1.25em 0.7em
+          text-decoration none
+          text-transform uppercase
+        a:hover
+          border-bottom 2px solid red
+
+hr
+  border-bottom 1px solid red
+  border-left 0
+  border-right 0
+  border-top 0
+  width 90%
+
+main
+  height 100%
+
+main.series
+  padding-bottom 2em
+  h1
+    color red
+    margin-bottom 1em
+    padding 1.5em 0 0 0
+    text-align center
+    text-transform uppercase
+  section.description
+    display inline-block
+    max-width 20em
+  section.main-show
+    background-color content-color
+    display inline-block
+    margin 0 1em
+    figure
+      height 30em
+      width 30em
+  section.banner
+    background-color content-color
+    display inline-block
+    height 30em
+    width 10em
+
+    article
+      background-color content-color
+      display inline-block
+      height 100px
+      margin 0 0 1em 1em
+      width 100px
+
+section#series
+  background-color back-gray
+  padding-bottom 2em
+  h1
+    color red
+    margin-bottom 1em
+    padding 1.5em 0 0 0
+    text-align center
+    text-transform uppercase
+  nav.genres
+    display inline-block
+    margin-left 2.5em
+    vertical-align top
+    ul
+      list-style none
+      li
+        margin-top 0.5em
+        button
+          background-color transparent
+          border 1px solid red
+          color red
+          margin-top 0.5em
+          padding 0.6em
+          width 6em
+        button:hover
+          color white
+          background-color red
+  section#shows
+    display inline-block
+    margin-left 0.5em
+    margin-top 1.5em
+    max-width 68.75em
+    vertical-align top
+    article
+      background-color content-color
+      display inline-block
+      height 200px
+      margin 0 0 1em 1em
+      width 200px
+
+section#hours
+  h1
+    color red
+    margin-bottom 1em
+    padding 1.5em 0 0 0
+    text-align center
+    text-transform uppercase
+  div.right-arrow
+    background transparent url("../images/themes-red.png") no-repeat left top
+    background-position -38px center
+    display inline-block
+    height 100%
+    margin-right 2em
+    vertical-align top
+    width 4em
+  div.left-arrow
+    background transparent url("../images/themes-red.png") no-repeat right top
+    background-position 34px center
+    display inline-block
+    height 100%
+    margin-left 2em
+    margin-right 1em
+    vertical-align top
+    width 4.5em
+  section#calendar
+    display inline-block
+    max-width 65em
+    time
+      color red
+      font-size 2em
+      margin-left 2em
+      span
+        font-style italic
+        font-weight bold
+
+section#contact
+  background-color back-gray
+  h1
+    color red
+    margin-bottom 1em
+    padding 1.5em 0 0 0
+    text-align center
+    text-transform uppercase
+  section.form-contact
+    display inline-block
+    margin 5em
+    padding 0 3em
+    vertical-align top
+    input[type="text"], input[type="email"]
+      display block
+      margin-bottom 1em
+      width 30em
+    input[type="submit"]
+      background-color red
+      border 1px solid red
+      color white
+      display block
+      float right
+      margin-top 0.5em
+      padding 0.6em
+      width 6em
+    textarea
+      display block
+      height 10em
+      margin-bottom 2em
+      width 30em
+
+  aside
+    display inline-block
+    margin 2.5em 0
+    section.news
+      display inline-block
+      margin-right 1em
+      vertical-align top
+      h3
+        color red
+        text-align center
+        text-transform uppercase
+      hr
+        width 100%
+      article
+        background-color content-color
+        display block
+        height 150px
+        margin-bottom 1em
+        width 200px
+    article
+      background-color content-color
+      display inline-block
+      height 370px
+      width 200px
+      vertical-align top
+
+footer
+  background-color footer-color
+  padding 0 4em 1em 4em
+  div
+    border-right 1px solid white
+    display inline-block
+    height 12em
+    margin 1em
+    vertical-align top
+    h5
+      color white
+      text-transform uppercase
+      font-style italic
+    ul
+      padding-left 0
+      padding-right 2.5em
+      list-style none
+      li
+        a
+          color white
+          font-size 0.6em
+          padding 1.25em 0.7em
+          text-decoration none
+          text-transform uppercase
+  figure
+    height 1.25em
+    margin 0 auto
+    padding-top 3em
+    width 8em
+    img
+      width 100%
+  p
+    color white
+    text-align center
+
+.active
+  color white
+  background-color red
+
+.main, .small, .medium, .large
+  background-color content-color
+  display inline-block
+  height 200px
+  margin 1em
+
+.main
+  width 62em
+
+.small
+  width 15em
+
+.medium
+  width 30em
+
+.large
+  width 45em

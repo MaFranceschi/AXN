@@ -1,0 +1,178 @@
+html
+  head
+    meta(charset="utf-8")
+    meta(name="viewport", content="width=device-width,initial-scale=1")
+    title AXN
+    link(rel="stylesheet", href="./css/style.css")
+    script(src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js")
+  body
+    header
+      figure
+        img(src="./images/logo.png", alt="logo")
+      nav
+        ul
+          li: a(href="#") Programación
+          li: a(href="#") Horario
+          li: a(href="#") Noticias
+          li: a(href="#") Media
+          li: a(href="#") Juegos y Más
+          li: a(href="#") SAP
+          li: span.icon-search
+      
+    main#wrapper(role="main")
+      div.rslides_container
+        ul.rslides
+          li: img(src="images/1.jpg", alt="")
+          li: img(src="images/2.jpg", alt="")
+          li: img(src="images/3.jpg", alt="")
+    section#series
+      h1 Programación
+      hr
+      nav.genres
+        ul
+          li: button TODO
+          li: button ACCIÓN
+          li: button DRAMA
+          li: button SCY-FI
+          li: button CRIMEN
+          li: button TERROR
+      section#shows
+        article
+          figure
+            img(src="", alt="")
+        article
+          figure
+            img(src="", alt="")
+        article
+          figure
+            img(src="", alt="")
+        article
+          figure
+            img(src="", alt="")
+        article
+          figure
+            img(src="", alt="")
+        article
+          figure
+            img(src="", alt="")
+        article
+          figure
+            img(src="", alt="")
+        article
+          figure
+            img(src="", alt="")
+        article
+          figure
+            img(src="", alt="")
+        article
+          figure
+            img(src="", alt="")
+        article
+          figure
+            img(src="", alt="")
+        article
+          figure
+            img(src="", alt="")
+        article
+          figure
+            img(src="", alt="")
+        article
+          figure
+            img(src="", alt="")
+        article
+          figure
+            img(src="", alt="")
+        article
+          figure
+            img(src="", alt="")
+        article
+          figure
+            img(src="", alt="")
+        article
+          figure
+            img(src="", alt="")
+
+            
+    section#hours
+      h1 Horarios
+      hr
+      div.left-arrow
+      section#calendar
+        time <span>Agosto</span> 2015
+        article.main 
+        article.small
+        article.large
+        article.large
+        article.small
+        article.medium
+        article.medium    
+      div.right-arrow
+
+      
+    section#contact
+      h1 Contacto
+      hr
+      section.form-contact
+        form
+          input(type="text", placeholder="NOMBRE")
+          input(type="email", placeholder="EMAIL")
+          textarea(placeholder="MENSAJE")
+          input(type="submit", value="ENVIAR")
+      aside
+        section.news
+          h3 Lo más visto
+          hr
+          article
+          article
+        article
+      
+    footer
+      div
+        h5 Secciones
+        ul
+          li: a(href="#") Home
+          li: a(href="#") Programación
+          li: a(href="#") Horario
+          li: a(href="#") Noticias
+          li: a(href="#") Media
+          li: a(href="#") Juegos y Más
+          li: a(href="#") Sap
+      div
+        h5 Sociales
+        ul
+          li: a(href="#") Twitter
+          li: a(href="#") Facebook
+          li: a(href="#") Google +
+          li: a(href="#") Youtube
+      div
+        h5 Compañía
+        ul
+          li: a(href="#") Sobre nosotros
+          li: a(href="#") Contáctanos
+          li: a(href="#") Políticas de privacidad
+          li: a(href="#") Términos de uso
+          li: a(href="#") Cambia de país          
+      figure
+        img(src="./images/logo.png", alt="logo")
+      p.
+        © 2015 AXN Latin America Inc. Todos los derechos reservados.
+      p.  
+        AXN es una marca de AXN Network, Inc.
+        
+          
+  script(src="./js/responsiveslides.js")
+  script.
+    $(function(){
+        $(".rslides").responsiveSlides({
+            auto: false,
+            pager: true,
+            nav: true,
+            speed: 500,
+            maxwidth: 1000,
+            namespace: "centered-btns"
+          });
+      })
+        
+        
+  
+  
