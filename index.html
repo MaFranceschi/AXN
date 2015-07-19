@@ -12,12 +12,12 @@
       <figure><img src="./images/logo.png" alt="logo"/></figure>
       <nav>
         <ul>
-          <li><a href="#">Programación</a></li>
-          <li><a href="#">Horario</a></li>
-          <li><a href="#">Noticias</a></li>
-          <li><a href="#">Media</a></li>
-          <li><a href="#">Juegos y Más</a></li>
-          <li><a href="#">SAP</a></li>
+          <li><a href="./series.html">Programación</a></li>
+          <li><a href="./hours.html">Horario</a></li>
+          <li><a href="./news.html">Noticias</a></li>
+          <li><a href="./media.html">Media</a></li>
+          <li><a href="./games.html">Juegos y Más</a></li>
+          <li><a href="./sap.html">SAP</a></li>
           <li><span class="icon-search"></span></li>
         </ul>
       </nav>
@@ -141,7 +141,7 @@
         </form>
       </section>
       <aside>
-        <section class="news">
+        <section class="updates">
           <h3>Lo más visto</h3>
           <hr/>
           <article></article>
@@ -154,13 +154,13 @@
       <div>
         <h5>Secciones</h5>
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Programación</a></li>
-          <li><a href="#">Horario</a></li>
-          <li><a href="#">Noticias</a></li>
-          <li><a href="#">Media</a></li>
-          <li><a href="#">Juegos y Más</a></li>
-          <li><a href="#">Sap</a></li>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./series.html">Programación</a></li>
+          <li><a href="./hours.html">Horario</a></li>
+          <li><a href="./news.html">Noticias</a></li>
+          <li><a href="./media.html">Media</a></li>
+          <li><a href="./games.html">Juegos y Más</a></li>
+          <li><a href="./sap.html">Sap</a></li>
         </ul>
       </div>
       <div>
@@ -184,26 +184,22 @@
       </div>
       <figure><img src="./images/logo.png" alt="logo"/></figure>
       <p>© 2015 AXN Latin America Inc. Todos los derechos reservados.</p>
-      <p>
-        AXN es una marca de AXN Network, Inc.
-        
-          
-      </p>
+      <p>AXN es una marca de AXN Network, Inc.</p>
     </footer>
+    <script src="./js/responsiveslides.js"></script>
+    <script>
+      $(function(){
+          $(".rslides").responsiveSlides({
+              auto: false,
+              pager: true,
+              nav: true,
+              speed: 500,
+              maxwidth: 1000,
+              namespace: "centered-btns"
+            });
+        })
+        
+        
+    </script>
   </body>
-  <script src="./js/responsiveslides.js"></script>
-  <script>
-    $(function(){
-        $(".rslides").responsiveSlides({
-            auto: false,
-            pager: true,
-            nav: true,
-            speed: 500,
-            maxwidth: 1000,
-            namespace: "centered-btns"
-          });
-      })
-        
-        
-  </script>
 </html>

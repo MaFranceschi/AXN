@@ -8,15 +8,14 @@ html
   body
     include ./header.jade
       
-    section.player
-      h1 Media
+    section.series
+      h1 Juegos y más
       hr
-      section.video
-        h2 Clips
-        figure
-          img(src="", alt="")
-      section.controls
-        a(href="./media.html") Todos los videos
+      h3 Quizz
+      section.separate
+        section.main-game
+          figure
+            img(src="", alt="")
         section.description
           h2 Título
           p.
@@ -24,30 +23,22 @@ html
             tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
             quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
             Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat 
-    
-      section.media
-        h3 Videos más destacados
-        hr
-        section.previews
-          article
-            figure
-              img(src="", alt="")
-          article
-            figure
-              img(src="", alt="")
-          article
-            figure
-              img(src="", alt="")
-          article
-            figure
-              img(src="", alt="")
-          article
-            figure
-              img(src="", alt="")
-          article
-            figure
-              img(src="", alt="")
-
-    include ./footer.jade        
+            nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia 
+            deserunt mollit anim id est laborum.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod 
         
-          
+      section.games
+        h1 Juegos y más
+        hr
+        div.left-arrow-quizz
+        section.options
+          article 
+          article
+          article
+        div.right-arrow-quizz
+        
+      section.left-side
+        a(href="./games.html") Todos los quizz
+
+    include ./footer.jade
+        

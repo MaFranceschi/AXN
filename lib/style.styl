@@ -92,6 +92,31 @@ section.series
       height 30em
       margin 0
       width 10em
+  section.main-game
+    width 45em
+    figure
+      background-color content-color
+      display inline-block
+      height 30em
+      margin 0
+      width 45em
+  section.left-side
+    height 10em
+    padding 0 3.5em
+    a
+      background-color transparent
+      border 1px solid red
+      color red
+      float left
+      height 1.25em
+      margin-top 0.5em
+      padding 0.6em
+      text-decoration none
+      text-transform uppercase
+      width auto
+    a:hover
+      color white
+      background-color red
   h3
     color red
     padding-left 5em
@@ -214,7 +239,6 @@ section.news
       width 170px
 
 section.media
-  max-width 65em
   h3
     color red
     margin-top 2em
@@ -222,21 +246,23 @@ section.media
     text-align left
     text-transform uppercase
   section.previews
-    padding 0 2em
+    padding 0 5em
     article
       display inline-block
       figure
         background-color content-color
         height 150px
         margin 0.5em
-        width 300px
+        width 350px
+      figure:hover
+        cursor pointer
   nav.genres
     display block
     margin-left 2.5em
     padding-bottom 2em
     vertical-align top
     ul
-      padding-left 0
+      padding-left 3em
       list-style none
       li
         display inline-block
@@ -251,6 +277,130 @@ section.media
         button:hover
           color white
           background-color red
+
+section.player
+  padding 0 2em 2em 2em
+  hr
+    margin-bottom 1em
+  h1
+    color red
+    margin-bottom 1em
+    padding 1.5em 0 0 0
+    text-align center
+    text-transform uppercase
+  section.video
+    h2
+      color red
+      padding-left 5em
+      text-transform uppercase
+    figure
+      background-color content-color
+      height 30em
+  section.controls
+    display flex
+    justify-content space-between
+    padding 0 2.5em
+    a
+      background-color transparent
+      border 1px solid red
+      color red
+      float left
+      height 1.25em
+      margin-top 0.5em
+      padding 0.6em
+      text-decoration none
+      text-transform uppercase
+      width auto
+    a:hover
+      color white
+      background-color red
+    section.description
+      display inline-block
+      margin-right 1em
+      vertical-align top
+      width 40em
+      h2
+        color red
+        text-align right
+        text-transform uppercase
+      p
+        max-width 40em
+        text-align right
+
+section.games
+  h1
+    color red
+    margin-bottom 1em
+    padding 1.5em 0 0 0
+    text-align center
+    text-transform uppercase
+  div.right-arrow
+    background transparent url("../images/themes-red.png") no-repeat left top
+    background-position -38px center
+    display inline-block
+    height 100%
+    margin-right 2em
+    vertical-align top
+    width 4em
+  div.left-arrow
+    background transparent url("../images/themes-red.png") no-repeat right top
+    background-position 34px center
+    display inline-block
+    height 100%
+    margin-left 2em
+    margin-right 1em
+    vertical-align top
+    width 4.5em
+  section.options
+    display inline-block
+    margin 0 1em
+    padding-bottom 2em
+    max-width 65em
+    h3
+      color red
+      font-size 2em
+      margin-left 2em
+      margin-top 1em
+      text-transform uppercase
+    article
+      background-color content-color
+      display inline-block
+      height 200px
+      margin 1em
+      width 19em
+
+section.available-games
+  h3
+    color red
+    margin-top 2em
+    padding-left 5em
+    text-align left
+    text-transform uppercase
+  padding 0 5em
+  section.all-games
+    padding 0 5em
+    section.recent-games
+      display inline-block
+      article
+        display inline-block
+        figure
+          background-color content-color
+          height 150px
+          margin 0.5em
+          width 300px
+        figure:hover
+          cursor pointer
+    section.banner
+      article
+        display block
+        padding-bottom 2em
+        figure
+          background-color content-color
+          height 150px
+          margin 0.5em
+          width 940px
+        figure:hover
+          cursor pointer
 
 section#series
   background-color back-gray
@@ -358,7 +508,6 @@ section#contact
       height 10em
       margin-bottom 2em
       width 30em
-
   aside
     display inline-block
     margin 2.5em 0
@@ -428,6 +577,10 @@ footer
   display flex
   justify-content center
 
+.separate
+  display flex
+  justify-content space-around
+
 .main, .small, .medium, .large
   background-color content-color
   display inline-block
@@ -445,3 +598,22 @@ footer
 
 .large
   width 45em
+
+div.left-arrow-quizz
+  background transparent url("../images/themes-red.png") no-repeat right top
+  background-position 34px center
+  display inline-block
+  height 35%
+  margin-left 2em
+  margin-right 1em
+  vertical-align top
+  width 4.5em
+
+div.right-arrow-quizz
+  background transparent url("../images/themes-red.png") no-repeat left top
+  background-position -38px center
+  display inline-block
+  height 35%
+  margin-right 2em
+  vertical-align top
+  width 4em
