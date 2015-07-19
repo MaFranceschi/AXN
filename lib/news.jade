@@ -8,12 +8,14 @@ html
   body
     include ./header.jade
       
-    section.series
-      h1 Programación
+    section.news
+      h1 Noticias
       hr
       section.container
-        section.description
+        article.relevant
           h2 Título
+          figure
+            img(src="", alt="")
           p.
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod 
             tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
@@ -24,33 +26,31 @@ html
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod 
             tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
             quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-        section.main-show
-          figure
-            img(src="", alt="")
-        section.banner
-          figure
-            img(src="", alt="")
-      h3 Videos
-      hr
-      section.videos
-        article
-          figure
-            img(src="", alt="")
-        article
-          figure
-            img(src="", alt="")
-        article
-          figure
-            img(src="", alt="")
-        article
-          figure
-            img(src="", alt="")
-        article
-          figure
-            img(src="", alt="")
-        article
-          figure
-            img(src="", alt="")
+        section.related-news
+          h2 Artículos relacionados
+          hr
+          div.grouped-news
+            article
+              figure
+                img(src="", alt="")
+            article
+              figure
+                img(src="", alt="")
+            article
+              figure
+                img(src="", alt="")
+            article
+              figure
+                img(src="", alt="")
+            article
+              figure
+                img(src="", alt="")
+            article
+              figure
+                img(src="", alt="")
+          div.banner
+            figure
+              img(src="", alt="")
       section.container
         section.gallery
           h3 Galería
@@ -92,11 +92,7 @@ html
             figure
               img(src="", alt="")
 
-    include ./footer.jade  
+
+    include ./footer.jade
+
         
-        
-          
-        
-        
-  
-  
