@@ -1,6 +1,6 @@
 {
 	"scripts": {
-		"jade":"jade -w -P lib/news.jade -o ./",
+		"jade":"jade -w -P lib/media.jade -o ./",
 		"styl":"stylus lib/style.styl -u nib -c -w -o ./css/",
 		"svr":"http-server ."
 	}
