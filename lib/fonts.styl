@@ -1,12 +1,15 @@
 @font-face
-  font-family 'icomoon'
-  src url('../fonts/icomoon.eot?3pge4a')
+  font-family 'axn_icons'
+  src url('../fonts/axn_icons.eot')
+  src url('../fonts/axn_icons.eot?#iefix') format('embedded-opentype'),
+      url('../fonts/axn_icons.woff') format('woff'),
+      url('../fonts/axn_icons.svg') format('svg'),
+      url('../fonts/axn_icons.ttf') format('truetype')
   font-weight normal
   font-style normal
 
 [class^="icon-"], [class*=" icon-"]
-  color red
-  font-family 'icomoon'
+  font-family 'axn_icons'
   speak none
   font-style normal
   font-weight normal
@@ -17,6 +20,36 @@
   -moz-osx-font-smoothing grayscale
 
 .icon-search
+  color red
+  cursor pointer
+  font-weight bold
+  padding 1.25em 0.7em
   &:before
-    content "\e036"
-    color red
+    content "\e600"
+    font-size 1em
+  &:hover
+    border-bottom 2px solid red
+
+.icon-fb
+  margin-left 1em
+  &:before
+    content "\e601"
+    font-size 1.5em
+
+.icon-yt
+  margin-left 1.5em
+  &:before
+    content "\e602"
+    font-size 1.5em
+
+.icon-g
+  margin-left 1.5em
+  &:before
+    content "\e603"
+    font-size 1.5em
+
+.icon-tw
+  margin-left 2em
+  &:before
+    content "\e604"
+    font-size 1.5em

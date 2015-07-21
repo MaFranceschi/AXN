@@ -54,6 +54,43 @@ hr
 main
   height 100%
 
+nav.genres
+  display inline-block
+  margin-left 2.5em
+  padding-bottom 2em
+  vertical-align top
+  ul
+    padding-right 0.5em
+    padding-left 1.5em
+    list-style none
+    li
+      display block
+      margin-top 0.5em
+      button
+        background-color transparent
+        border 1px solid red
+        color red
+        margin-top 0.5em
+        padding 0.6em
+        text-align left
+        width 7.5em
+        span
+          background red
+          border-radius 50%
+          color white
+          font-size 0.8em
+          float right
+          opacity 0.5
+          padding 0.4em
+      button:hover
+        color white
+        background-color red
+        span
+          background white
+          color red
+          opacity 1
+
+
 section.series
   padding 0 2em 2em 2em
   hr
@@ -257,27 +294,7 @@ section.media
         width 350px
       figure:hover
         cursor pointer
-  nav.genres
-    display block
-    margin-left 2.5em
-    padding-bottom 2em
-    vertical-align top
-    ul
-      padding-left 3em
-      list-style none
-      li
-        display inline-block
-        margin-top 0.5em
-        button
-          background-color transparent
-          border 1px solid red
-          color red
-          margin-top 0.5em
-          padding 0.6em
-          width 6em
-        button:hover
-          color white
-          background-color red
+
 
 section.player
   padding 0 2em 2em 2em
@@ -406,33 +423,15 @@ section.available-games
 section#series
   background-color back-gray
   padding-bottom 2em
+  padding-top 0.5em
   h1
     color red
     margin-bottom 1em
     padding 1.5em 0 0 0
     text-align center
     text-transform uppercase
-  nav.genres
-    display inline-block
-    margin-left 2.5em
-    vertical-align top
-    ul
-      list-style none
-      li
-        margin-top 0.5em
-        button
-          background-color transparent
-          border 1px solid red
-          color red
-          margin-top 0.5em
-          padding 0.6em
-          width 6em
-        button:hover
-          color white
-          background-color red
   section#shows
     display inline-block
-    margin-left 0.5em
     margin-top 1.5em
     max-width 68.75em
     vertical-align top
@@ -444,6 +443,7 @@ section#series
       width 200px
 
 section#hours
+  padding-top 0.5em
   h1
     color red
     margin-bottom 1em
@@ -454,22 +454,33 @@ section#hours
     background transparent url("../images/themes-red.png") no-repeat left top
     background-position -38px center
     display inline-block
-    height 100%
     margin-right 2em
     vertical-align top
     width 4em
+    &:hover
+      background transparent url("../images/themes-red-hover.png") no-repeat left top
+      background-position -38px center
+      cursor pointer
   div.left-arrow
     background transparent url("../images/themes-red.png") no-repeat right top
     background-position 34px center
     display inline-block
-    height 100%
     margin-left 2em
     margin-right 1em
     vertical-align top
     width 4.5em
-  section#calendar
+    &:hover
+      background transparent url("../images/themes-red-hover.png") no-repeat right top
+      background-position 34px center
+      cursor pointer
+  section.calendar
     display inline-block
     max-width 65em
+    article
+      figure
+        margin 0
+        img
+          width 100%
     time
       color red
       font-size 2em
@@ -522,18 +533,28 @@ section#contact
         text-transform uppercase
       hr
         width 100%
-      article
+      article.grid
         background-color content-color
         display block
         height 150px
         margin-bottom 1em
         width 200px
+        figure.effect-jazz
+          height 150px
+          margin 0
+          width 200px
+          img
+            width 100%
     article
       background-color content-color
       display inline-block
       height 370px
       width 200px
       vertical-align top
+      figure
+        margin 0
+        img
+          width 100%
 
 footer
   background-color footer-color
@@ -562,6 +583,7 @@ footer
   figure
     height 1.25em
     margin 0 auto
+    margin-bottom 4em
     padding-top 3em
     width 8em
     img
@@ -570,9 +592,17 @@ footer
     color white
     text-align center
 
-.active
-  color white
-  background-color red
+nav.genres
+  ul
+    li
+      button.active
+        background-color red
+        color white
+        span
+          background white
+          color red
+          opacity 1
+
 
 .container
   display flex
@@ -589,16 +619,21 @@ footer
   margin 1em
 
 .main
+  cursor pointer
   width 62em
 
 .small
+  cursor pointer
   width 15em
 
 .medium
+  cursor pointer
   width 30em
 
 .large
+  cursor pointer
   width 45em
+
 
 div.left-arrow-quizz
   background transparent url("../images/themes-red.png") no-repeat right top

@@ -5,222 +5,52 @@ html
     title AXN
     link(rel="stylesheet", href="./css/style.css")
     script(src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js")
+    script(src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js")
   body
-    include ./header.jade
+    include ./header/header.jade
       
     main#wrapper(role="main")
       div.rslides_container
         ul.rslides
-          li: img(src="images/1.jpg", alt="")
-          li: img(src="images/2.jpg", alt="")
-          li: img(src="images/3.jpg", alt="")
+          li: img(src="images/slider/1.jpg", alt="")
+          li: img(src="images/slider/2.jpg", alt="")
+          li: img(src="images/slider/3.jpg", alt="")
+    
     section#series
       h1 Programación
       hr
-      nav.genres
-        ul
-          li: button TODO
-          li: button ACCIÓN
-          li: button DRAMA
-          li: button SCY-FI
-          li: button CRIMEN
-          li: button TERROR
-      section#shows
-        article.grid
-          figure.effect-jazz
-            img(src="http://www.placecage.com/200/200" alt="Imagen")
-            figcaption
-              h2 Película
-              p.
-                Esta es una película muy buena
-              a(href="#") Ir        
-        article.grid
-          figure.effect-jazz
-            img(src="http://www.placecage.com/200/200" alt="Imagen")
-            figcaption
-              h2 Película
-              p.
-                Esta es una película muy buena
-              a(href="#") Ir
-        article.grid
-          figure.effect-jazz
-            img(src="http://www.placecage.com/200/200" alt="Imagen")
-            figcaption
-              h2 Película
-              p.
-                Esta es una película muy buena
-              a(href="#") Ir        
-        article.grid
-          figure.effect-jazz
-            img(src="http://www.placecage.com/200/200" alt="Imagen")
-            figcaption
-              h2 Película
-              p.
-                Esta es una película muy buena
-              a(href="#") Ir
-        article.grid
-          figure.effect-jazz
-            img(src="http://www.placecage.com/200/200" alt="Imagen")
-            figcaption
-              h2 Película
-              p.
-                Esta es una película muy buena
-              a(href="#") Ir        
-        article.grid
-          figure.effect-jazz
-            img(src="http://www.placecage.com/200/200" alt="Imagen")
-            figcaption
-              h2 Película
-              p.
-                Esta es una película muy buena
-              a(href="#") Ir
-        article.grid
-          figure.effect-jazz
-            img(src="http://www.placecage.com/200/200" alt="Imagen")
-            figcaption
-              h2 Película
-              p.
-                Esta es una película muy buena
-              a(href="#") Ir        
-        article.grid
-          figure.effect-jazz
-            img(src="http://www.placecage.com/200/200" alt="Imagen")
-            figcaption
-              h2 Película
-              p.
-                Esta es una película muy buena
-              a(href="#") Ir
-        article.grid
-          figure.effect-jazz
-            img(src="http://www.placecage.com/200/200" alt="Imagen")
-            figcaption
-              h2 Película
-              p.
-                Esta es una película muy buena
-              a(href="#") Ir        
-        article.grid
-          figure.effect-jazz
-            img(src="http://www.placecage.com/200/200" alt="Imagen")
-            figcaption
-              h2 Película
-              p.
-                Esta es una película muy buena
-              a(href="#") Ir
-        article.grid
-          figure.effect-jazz
-            img(src="http://www.placecage.com/200/200" alt="Imagen")
-            figcaption
-              h2 Película
-              p.
-                Esta es una película muy buena
-              a(href="#") Ir        
-        article.grid
-          figure.effect-jazz
-            img(src="http://www.placecage.com/200/200" alt="Imagen")
-            figcaption
-              h2 Película
-              p.
-                Esta es una película muy buena
-              a(href="#") Ir
-        article.grid
-          figure.effect-jazz
-            img(src="http://www.placecage.com/200/200" alt="Imagen")
-            figcaption
-              h2 Película
-              p.
-                Esta es una película muy buena
-              a(href="#") Ir        
-        article.grid
-          figure.effect-jazz
-            img(src="http://www.placecage.com/200/200" alt="Imagen")
-            figcaption
-              h2 Película
-              p.
-                Esta es una película muy buena
-              a(href="#") Ir
-        article.grid
-          figure.effect-jazz
-            img(src="http://www.placecage.com/200/200" alt="Imagen")
-            figcaption
-              h2 Película
-              p.
-                Esta es una película muy buena
-              a(href="#") Ir        
-        article.grid
-          figure.effect-jazz
-            img(src="http://www.placecage.com/200/200" alt="Imagen")
-            figcaption
-              h2 Película
-              p.
-                Esta es una película muy buena
-              a(href="#") Ir
-        //- article
-        //-   figure
-        //-     img(src="", alt="")
-        //- article
-        //-   figure
-        //-     img(src="", alt="")
-        //- article
-        //-   figure
-        //-     img(src="", alt="")
-        //- article
-        //-   figure
-        //-     img(src="", alt="")
-        //- article
-        //-   figure
-        //-     img(src="", alt="")
-        //- article
-        //-   figure
-        //-     img(src="", alt="")
-        //- article
-        //-   figure
-        //-     img(src="", alt="")
-        //- article
-        //-   figure
-        //-     img(src="", alt="")
-        //- article
-        //-   figure
-        //-     img(src="", alt="")
-        //- article
-        //-   figure
-        //-     img(src="", alt="")
-        //- article
-        //-   figure
-        //-     img(src="", alt="")
-        //- article
-        //-   figure
-        //-     img(src="", alt="")
-        //- article
-        //-   figure
-        //-     img(src="", alt="")
-        //- article
-        //-   figure
-        //-     img(src="", alt="")
-        //- article
-        //-   figure
-        //-     img(src="", alt="")
-        //- article
-        //-   figure
-        //-     img(src="", alt="")
-        //- article
-        //-   figure
-        //-     img(src="", alt="")
-
+      include ./genres-nav/genres-nav.jade
+      include ./shows-grid/shows-grid.jade
             
     section#hours
       h1 Horarios
       hr
-      div.left-arrow
-      section#calendar
-        time <span>Agosto</span> 2015
-        article.main 
-        article.small
-        article.large
-        article.large
-        article.small
-        article.medium
-        article.medium    
-      div.right-arrow
+      section.container
+        div.left-arrow
+        section.calendar
+          time <span>Agosto</span> 2015
+          article.main
+            figure
+              img(src="./images/horario/1.jpg")
+          article.small
+            figure
+              img(src="./images/horario/2.jpg")
+          article.large
+            figure
+              img(src="./images/horario/3.jpg")
+          article.large
+            figure
+              img(src="./images/horario/4.jpg")
+          article.small
+            figure
+              img(src="./images/horario/5.jpg")
+          article.medium
+            figure
+              img(src="./images/horario/6.jpg")
+          article.medium
+            figure
+              img(src="./images/horario/7.jpg")    
+        div.right-arrow
 
       
     section#contact
@@ -236,15 +66,32 @@ html
         section.updates
           h3 Lo más visto
           hr
-          article
-          article
+          article.grid
+            figure.effect-jazz
+              img(src="./images/contacto/1.jpg" alt="Imagen")
+              figcaption
+                p.
+                  Una mente brillante a favor de la justicia
+                a(href="./news.html") Ir
+          article.grid
+            figure.effect-jazz
+              img(src="./images/contacto/2.jpg" alt="Imagen")
+              figcaption
+                p.
+                  Hannibal más sediento de sangre que nunca
+                a(href="./news.html") Ir
         article
-    include ./footer.jade          
+          figure
+            img(src="./images/contacto/3.jpg")
+    include ./footer/footer.jade
+    script(src="./js/parallax.js")          
     script(src="./js/responsiveslides.js")
+    script(src="./js/nav-genres.js")
+    script(src="./js/guide-shows.js")
     script.
       $(function(){
           $(".rslides").responsiveSlides({
-              auto: false,
+              auto: true,
               pager: true,
               nav: true,
               speed: 500,
